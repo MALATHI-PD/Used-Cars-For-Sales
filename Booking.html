@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Test Drive | Ridon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Ridon</h1>
+            <nav>
+                <ul>
+                    <li><a href="cars.html">Home</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="booking-container">
+            <h2>Book a Test Drive</h2>
+            <p class="booking-car-info">You're booking a test drive for: <strong id="bookingCarTitle">2018 Honda Civic LX</strong></p>
+            
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="bookingName">Full Name</label>
+                    <input type="text" id="bookingName" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingEmail">Email</label>
+                    <input type="email" id="bookingEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingPhone">Phone Number</label>
+                    <input type="tel" id="bookingPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingDate">Preferred Date</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookingTime">Preferred Time</label>
+                    <select id="bookingTime" required>
+                        <option value="">Select a time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bookingNotes">Special Requests</label>
+                    <textarea id="bookingNotes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Confirm Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="booking-confirmation" id="bookingConfirmation" style="display: none;">
+        <div class="confirmation-content">
+            <h3>Booking Confirmed!</h3>
+            <p>Your test drive has been successfully booked.</p>
+            <p>We've sent the details to your email.</p>
+            <button id="returnToCarBtn" class="btn-primary">Return to Car Details</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Ridon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
