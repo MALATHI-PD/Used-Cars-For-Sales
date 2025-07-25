@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details | Ridon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Ridon</h1>
+            <nav>
+                <ul>
+                    <li><a href="cars.html">Home</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="car-details-container">
+            <div class="car-details-images">
+                <div class="main-image">
+                    <img id="mainCarImage" src="hondacivic.jpg" alt="Car Image">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="img1.jpg" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="img2.jpeg" alt="Thumbnail 2" class="thumbnail">
+                    <img src="img3.jpg" alt="Thumbnail 3" class="thumbnail">
+                </div>
+            </div>
+            <div class="car-details-info">
+                <h2 id="carTitle">2018 Honda Civic LX</h2>
+                <p class="price" id="carPrice">$18,500</p>
+                <div class="car-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">Mileage:</span>
+                        <span class="spec-value" id="carMileage">45,000 miles</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Transmission:</span>
+                        <span class="spec-value" id="carTransmission">Automatic</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Fuel Type:</span>
+                        <span class="spec-value" id="carFuel">Gasoline</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Color:</span>
+                        <span class="spec-value" id="carColor">Silver</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Year:</span>
+                        <span class="spec-value" id="carYear">2018</span>
+                    </div>
+                </div>
+                <div class="car-description">
+                    <h3>Description</h3>
+                    <p id="carDescription">This well-maintained 2018 Honda Civic LX comes with a clean title and has been regularly serviced. It features a 2.0L 4-cylinder engine, Bluetooth connectivity, rearview camera, and more. Great fuel economy and reliable performance.</p>
+                </div>
+                <div class="action-buttons">
+                    <button id="contactSellerBtn" class="btn-primary">Contact Seller</button>
+                    <button id="bookTestDriveBtn" class="btn-secondary">Book Test Drive</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-seller-form" id="contactForm" style="display: none;">
+            <h3>Contact Seller</h3>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="messageName">Your Name</label>
+                    <input type="text" id="messageName" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageEmail">Your Email</label>
+                    <input type="email" id="messageEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="messagePhone">Phone Number</label>
+                    <input type="tel" id="messagePhone">
+                </div>
+                <div class="form-group">
+                    <label for="messageContent">Your Message</label>
+                    <textarea id="messageContent" rows="5" required>I'm interested in this car. Please contact me with more details.</textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Ridon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
